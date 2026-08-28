@@ -1,0 +1,65 @@
+/* Seleciona TODOS elementos */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* SELETOR POR TAG */
+body{
+    background-color: azure;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+/* SELETOR POR ID */
+#topo{
+    background-color: rgb(43, 128, 226);
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 10px solid darkorchid;;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* SELETOR POR CLASSE */
+.texto-top{
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+/* Estiliza os elementos com a classe bloco */
+.bloco{
+    background-color: bisque;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 5px solid darkorchid;
+    /* arredondar borda */
+    border-radius: 20px;
+}
+
+.destaque{
+    background-color: goldenrod;
+    font-style: bold;
+    font-style: darkred;
+}
+
+.texto-destaque{
+    font-weight: bold;
+    color: darkred;
+}
+
+#caixa-unica{
+    padding: 10px;
+    border: 2px purple;
+    background-color: #ede9fe;
+}
+
+
