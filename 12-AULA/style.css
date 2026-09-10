@@ -162,3 +162,35 @@ input:disabled{
     color: gold;
     font-size: 20px;
 }
+
+/* PSEUDO ELEMENTOS */
+
+/* Insere itens ANTES  dos elementos */
+h2::before{
+    color: green;
+    content: "❤️😘👌🐳🦕👴";
+}
+
+/* Insere itens DEPOIS dos elementos */
+h2::after{
+    color: red;
+    content: "😒😍😂🏓";
+}
+
+/* Estiliza o texto dentro dos inputs */
+input::placeholder{
+    color: darkcyan;
+    font-style: italic;
+}
+
+/* Estiliza o texto selecionado */
+::selection{
+    background-color: orange;
+    color: green;
+}
+
+/* Estiliza os marcadores de texto */
+.lista-marker li::marker{
+    color: #03f182;
+    font-size: 20px;
+}
