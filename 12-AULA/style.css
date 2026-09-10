@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* IMPORTAÇÃO DE FONTES DO GOOGLE */
+
+/* VIA URL */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    background-color: blanchedalmond;
+    margin: 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* USANDO FONTE VIA URL */
+h1{
+    font-weight: 300;
+}
+
+h2{
+   
+    font-weight: 600;
+}
+
+/* Estilização de vários elementos ao mesmo tempo */
+h1,h2{
+    font-family: "Playfair Display", serif;
+    color: #1f3c88;
+}
+
+/* Estilização */
+.bloco{
+    background-color: white;
+    border: 2px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* IMPORTAR FONTES DO PROJETO */
+@font-face{
+    font-family: "Slabo";
+    src: url(./fonts/Slabo.ttf);
+}
+
+p{
+    font-family: "Slabo";
+    font-size: 15px;
+    color: rgb(15, 15, 172);
+}
+
+/* PSEUDO CLASSES */
+a{
+    color: orange;
+}
+
+/* Links não visitados */
+a:link{
+    color: green;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+/* Link que está ativo, que está clicado */
+a:active{
+    color: cyan;
+}
+
+/* Quando passa o mouse em cima */
+a:hover{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Quando passa o mouse em cima */
+button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    transform: scale(0.3,5);
+}
+
+/* Botão que está ativo, que está clicado */
+button:active{
+    /* transform: scaleX(1.6);
+    transform: scaleY(1.7); */
+
+    transform: rotate(360deg);
+    transition: 3s;
+}
+
+/* Imput quando está selecionado */
+input:focus{
+    outline: none;
+    border: 2px solid #fd0;
+    background-color: azure;
+}
+
+/* Input quando é obrigatório */
+input:required{
+    border: 2px solid red;
+}
+
+/* Quando o preenchimento é válido */
+input:valid{
+    background-color: greenyellow;
+}
+
+/* Quando o checkbox está marcado */
+input:checked{
+    accent-color: green;
+
+}
+
+/* Estiliza os inputs desabilitados */
+input:disabled{
+    background-color: #e5e7eb;
+    color: #6b7280;
+}
+
+/* SELECIONA O PRIMEIRO FILHO, VULGO PRIMOGENITO */
+.lista-exemplo li:first-child{
+    color: green;
+    font-weight: bold;
+}
+
+/* SELECIONA O ULTIMO FILHO, VULGO preferido*/
+.lista-exemplo li:last-child{
+    font-weight: bold;
+    height: 30px;
+    background-image: linear-gradient(90deg ,red 10%, yellow 30%, green 60%);
+}
+
+/* SELECIONA O FILHO QUE VOCE ESOLHER O NUMERO */
+.lista-exemplo li:nth-child(3){
+    background-color: gold;
+}
+
+/* SELECIONA ESPAÇO VAZIO */
+.caixa-vazia:empty{
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+}
+
+/* Seleciona a primeira letra de um texto */
+.texto-especial::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+/* Seleciona a primeira linha de uma texto */
+.texto-especial::first-line{
+    color: gold;
+    font-size: 20px;
+}
