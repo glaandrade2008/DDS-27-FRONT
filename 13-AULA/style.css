@@ -1,0 +1,20 @@
+body{
+    background-color: aquamarine;
+}
+
+span{
+   font-size: 100px;
+}
+
+.icones{
+    font-size: 100px;
+    color: violet;
+    transition: 1s;
+}
+
+.icones:hover{
+    background-color: purple;
+    color: white;
+    font-size: 200px;
+    transition: 3s;
+}
